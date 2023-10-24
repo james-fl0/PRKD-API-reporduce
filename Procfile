@@ -1,1 +1,1 @@
-web: gunicorn -b 0.0.0.0:${PORT:-8080} app:app
+web: gunicorn -b 0.0.0.0:${PORT:-8080} --enable-stdio-inheritance app:app
